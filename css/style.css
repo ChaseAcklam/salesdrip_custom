@@ -1,0 +1,438 @@
+html {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font-size: 12px;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  font-family: 'Montserrat', sans-serif;
+}
+
+body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  max-width: 1800px;
+  max-height: 800px;
+}
+
+/*--------- Header Section -----------------------------------------*/
+
+.header {
+  width: 100%;
+  height: 8rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: black;
+  position: fixed;
+  z-index: 10;
+}
+
+.lefthead {
+  margin-left: 5rem;
+}
+
+.righthead {
+  margin-right: 10rem;
+}
+
+.logo img {
+  width: 10rem;
+}
+
+
+
+/*--------- Main Section -----------------------------------------*/
+
+.main {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.banner {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+
+.parallax {
+  width: 100%;
+  perspective: 1px;
+  height: 75rem;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+.parallax__layer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.parallax__layer img{
+  width: 100%;
+  margin-top: 90rem;
+}
+
+.parallax__layer-- {
+  transform: translateZ(0);
+  border: 20px dotted red;
+
+}
+.parallax__layer--1 {
+  transform: translateZ(-1px) scale(2);
+
+}
+
+.parallax__layer--2 {
+  transform: translateZ(-2px) scale(3);
+
+}
+.parallax__layer--3 {
+  transform: translateZ(-3px) scale(4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+}
+.parallax__layer--4 {
+  transform: translateZ(-4px) scale(5);
+}
+.parallax__layer--5 {
+  transform: translateZ(-5px) scale(6);
+}
+.parallax__layer--6 {
+  transform: translateZ(-6px) scale(7);
+}
+.parallax__layer--7 {
+  transform: translateZ(-7px) scale(8);
+}
+.parallax__layer--8 {
+  transform: translateZ(-8px) scale(9);
+}
+.parallax__layer--9 {
+  transform: translateZ(-9px) scale(10);
+}
+
+.title {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  position: fixed;
+  z-index: 9;
+  font-size: 5rem;
+  color: white;
+  right: 70%;
+  bottom: 65%;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 200;
+}
+.homepage {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  position: absolute;
+  top: 95%;
+}
+
+.textbox {
+  width: 40%;
+  margin: 2rem;
+}
+
+.textbox h2 {
+  font-weight: 900;
+  font-size: 3rem;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.textbox p {
+  font-size: 2rem;
+}
+
+.textbox ul {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 5rem;
+  margin-left: 5rem;
+  font-size: 2rem;
+  line-height: 2;
+  list-style-position: inside;
+}
+
+.textbox ul li {
+  text-align: center;
+}
+
+.contactbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 15rem;
+  background-color: rgb(40, 40, 40);
+}
+
+.contactbar h3 {
+  display: flex;
+  align-items: center;
+  color: white;
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.contact_bttn{
+  background-image: url("https://app.salesdrip.com/users/myteam45561/Media15.png");
+  background-position: 115% 100%;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  color: white;
+  padding: 1.5rem 3rem;
+  width: 20rem;
+  height: 5rem;
+  border: 1px solid rgb(220,220,220);
+  margin-left: 5rem;
+  cursor: pointer;
+  transition: all 500ms ease;
+}
+
+.contact_bttn img {
+  width: 850px;
+}
+
+.contact_bttn:hover {
+  background-position: 100% 100%;
+  color: black;
+}
+/*--------- Photo Section -----------------------------------------*/
+
+.photobox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10rem;
+  width: 90%;
+  height: 60rem;
+  border: 1px dotted white;
+}
+
+.pixelmator {
+  width: 45%;
+  height: 80%;
+}
+
+.pixelmator  img {
+  width: 100%;
+}
+
+.labscroll {
+  width: 40%;
+  height: 60%;
+  overflow: scroll;
+}
+
+.dogs_parallax {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height:130rem;
+}
+
+.yellow_lab {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 60rem;
+  background-image: url("https://app.salesdrip.com/users/myteam45561/Media28.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 350%;
+  background-attachment: fixed;
+  overflow-x: hidden;
+}
+
+.brown_lab {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 40rem;
+  background-image: url("https://app.salesdrip.com/users/myteam45561/Media27.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-attachment:fixed;
+  background-position: 350%;
+  overflow-x: hidden;
+}
+
+.black_lab {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 40rem;
+  background-image: url("https://app.salesdrip.com/users/myteam45561/Media29.png");
+  background-size:contain;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: 350%;
+  overflow-x: hidden;
+}
+
+/*--------- Footer Section -----------------------------------------*/
+footer {
+  position: absolute;
+  top: 100%;
+  z-index: 20;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 5rem;
+  background-color: black;
+  color: white;
+  margin-left: 1rem;
+  color: #ff6600;
+}
+
+/*--------- Scrolling Meter Section -----------------------------------------*/
+
+.progress-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 1rem;
+  background: #000;
+}
+
+.progress-bar {
+  margin-top: 1rem;
+  height: 1rem;
+  background: rgb(1, 120, 194);
+  width: 0%;
+}
+
+.aboutstrip {
+  height: 2rem;
+  width: 100%;
+  background-color: black;
+}
+
+.scrollingMeter-about {
+  width: 100%;
+  height: 2rem;
+  bottom: 50%;
+  z-index: 100;
+}
+
+/*--------- Fade Section -----------------------------------------*/
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 15s;
+  animation-name: fade;
+  animation-duration: 15s;
+  animation-iteration-count: 1;
+}
+
+@-webkit-keyframes fade {
+  0% {
+   opacity:0;
+ }
+ 35% {
+ opacity:1;
+ }
+ 85% {
+ opacity:1;
+ }
+ 100% {
+ opacity:1;
+ }
+}
+
+@keyframes fade {
+  0% {
+   opacity:0;
+ }
+ 35% {
+ opacity:1;
+ }
+ 85% {
+ opacity:1;
+ }
+ 100% {
+ opacity:1;
+ }
+}
+
+/*--------- Span Section -----------------------------------------*/
+
+.helvetica {
+  font-family: helvetica;
+}
+
+.largebold {
+  font-weight: 900;
+}
+
+.white {
+  color: white;
+}
+
+.orange {
+  color: #ff6600;
+}
+
+.row {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.middle {
+  top: 50%;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.metal {
+  background-image: url("https://app.salesdrip.com/users/myteam45561/Media17.png");
+  background-size: contain;
+}
